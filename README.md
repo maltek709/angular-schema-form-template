@@ -3,6 +3,10 @@
 This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
 version 0.15.1.
 
+## Starting from Scratch
+
+The next few sections describe how you can create a new angularjs project using **yeoman angular generator** and include **angular-schema-form**.
+
 ### Create project using yo angular generator
 * Create new folder `mkdir asf-project`
 * Change into directory `cd asf-project`
@@ -82,6 +86,7 @@ Now bind schema, form and model to view like this
 ```
 
 ## Build & development
+Download and install [**json-server**](https://github.com/typicode/json-server) with npm `$ npm install -g json-server`. Start **json-server** inside the project by `json-server --watch db.json`. Json-Server builds a mockup REST API server on your local machine using the structure defined in  **db.json**. By default accessible via `localhost:3000`. This is needed because the needed schemas and forms are defined in **db.json** and fetched from the webserver.
 
 Run `grunt` for building and `grunt serve` for preview.
 
