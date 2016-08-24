@@ -1,0 +1,13 @@
+<div>
+    <form name="myForm"
+          sf-schema="vm.schema"
+          sf-form="vm.form"
+          sf-model="vm.model"
+          ng-submit="vm.onSubmit(myForm)"></form>
+    <form name="myForm2"
+          sf-schema="vm.schema2"
+          sf-form="vm.form2"
+          sf-model="vm.model2"></form>
+    <p>Ausgabe: {{output}}</p>
+    <p ng-repeat='user in vm.users'>Id: {{user.id}}, Name: <span if-ng='user.title'>{{user.title}} </span>{{user.name}}</p>
+</div>
